@@ -25,7 +25,8 @@ ul.addEventListener('click', toggleAndDelete);
 
 function createListElement() {
 	var li = document.createElement("li");
-	ul.insertAdjacentHTML('beforeend', '<div class="form-field"><li>' + input.value + '</li> <button class="delete">Delete</button></div>');
+	ul.insertAdjacentHTML('beforeend', '<div class="form-field"><li>' + input.value + '</li> \
+	<button class="delete">Delete</button></div>');
 	input.value = "";
 }
 
@@ -48,3 +49,4 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
