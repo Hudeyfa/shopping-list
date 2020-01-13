@@ -2,7 +2,6 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
-
 // The following function handles both toggling and deleting
 function toggleAndDelete(event) {
 	var target = event.target;
@@ -17,7 +16,6 @@ function toggleAndDelete(event) {
 }
 
 ul.addEventListener('click', toggleAndDelete);
-
 
 
 // Adding new item
@@ -47,5 +45,4 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-
 
