@@ -4,7 +4,6 @@ var ul = document.querySelector("ul");
 
 
 // The following function handles both toggling and deleting
-
 function toggleAndDelete(event) {
 	var target = event.target;
 	//Toggling the 'done' class when a list item is clicked
@@ -22,7 +21,6 @@ ul.addEventListener('click', toggleAndDelete);
 
 
 // Adding new item
-
 function createListElement() {
 	var li = document.createElement("li");
 	ul.insertAdjacentHTML('beforeend', '<div class="form-field"><li>' + input.value + '</li> \
