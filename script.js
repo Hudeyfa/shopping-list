@@ -3,7 +3,7 @@ var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
 
-// The following functions handles both toggling and deleting
+// The following function handles both toggling and deleting
 
 function toggleAndDelete(event) {
 	var target = event.target;
@@ -49,4 +49,5 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
 
